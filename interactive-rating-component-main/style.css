@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.832);
+}
+.rating__section{
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rating__container{
+    z-index:1;
+    padding: 2rem;
+    display:flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    gap:1.5rem;
+    background-color: hsl(216, 12%, 8%);
+    color:hsl(216, 12%, 54%);
+    width:20%;
+}
+.rating__star{
+    padding: 0.4rem 0.5rem;
+    border-radius: 2rem;
+    background-color: hsl(213, 19%, 18%);
+    width:fit-content;
+    margin-bottom:1rem;
+}
+.rating__number{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.rating__btn{
+    border-radius: 1.2rem;
+    background-color:hsl(25, 97%, 53%);
+    text-align: center;
+    padding:0.8rem;
+    color:hsl(0, 0%, 100%);
+}
+.rating_noDesign{
+    border-radius: 2.5rem;
+    padding: 1rem 1.3rem;
+    background-color: hsl(213, 19%, 18%);
+}
+.rating_noDesign:hover{
+    background-color:hsl(25, 97%, 53%);
+    cursor: pointer;
+    color:hsl(0, 0%, 100%);
+}
+.rating__btn:hover{
+    background-color:hsl(0, 0%, 100%);
+    color:hsl(25, 97%, 53%);
+}
+.rating__h1{
+    color:white;
+    line-height: 1rem;
+}
+.rating__activeClass{
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+.result__container{
+    display: none;
+    z-index:1;
+    padding: 2rem;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    gap:1.5rem;
+    background-color: hsl(216, 12%, 8%);
+    color:hsl(216, 12%, 54%);
+    width:20%;
+    text-align: center;
+}
+.result__img{
+    height:80px;
+}
+.result__h3{
+    color:hsl(25, 97%, 53%);
+    background-color:hsl(213, 19%, 18%);
+    border-radius: 1rem;
+    padding: 0.4rem;
+    width:fit-co
+}
+
+@media only screen and (max-width:1400px){
+    .rating__container{
+        width:40%;
+    }
+    .result__container{
+        width:40%;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    .rating__container{
+        width:75vw;
+    }
+    .result__container{
+        width:75vw;
+    }
+}
