@@ -18,9 +18,9 @@ function onRateClick(oEvent) {
     }
 
 
-    window.rate = oEvent.path[0].innerHTML;
+    window.rate = oEvent.target.textContent;
 
-    oEvent.path[0].classList.add('rating__activeClass');
+    rates[window.rate-1].classList.add('rating__activeClass');
 }
 function onSubmit() {
     if (window.rate) {
