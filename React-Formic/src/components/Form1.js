@@ -14,7 +14,7 @@ function Form1() {
       .required('Please Enter Last name'),
     dob:Yup.date().required('Please Enter Date'),
     email: Yup.string().email("Please provide correct email").required('Please provide email'),
-    aadhar:Yup.string().max(12,"Enter 12 Digits Aadhar No.").min(12,"Enter 12 Digit Aadhar No.").required('Enter Aadhar Card No.'),
+    aadhar:Yup.number("Enter Aadhar No.").max(999999999999,"Enter 12 Digits Aadhar No.").min(100000000000,"Enter 12 Digit Aadhar No.").required('Enter Aadhar Card No.'),
     pan:Yup.string().max(10,"Enter 10 Digits PAN No.").min(10,"Enter 10 Digit PAN No.").required('Enter PAN Card No.')
   });
   const formik=useFormik({
